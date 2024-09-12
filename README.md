@@ -23,8 +23,9 @@ El juego se puede reiniciar en cualquier momento haciendo clic en el botón "NUE
 ¡Las contribuciones son bienvenidas! Si tienes sugerencias para mejorar el juego o encuentras errores, por favor, abre un *issue* en el repositorio o envía un *pull request*. Tu ayuda es apreciada para mejorar la calidad del proyecto.
 
 ## Fotos
- ![Captura](assets/Captura de pantalla 2024-09-12 a las 18.31.43.png)
- ![Captura](ahorcado/src/assets/Captura de pantalla 2024-09-12 a las 18.32.01.png)
+![alt text](https://github.com/KarmeleTellechea/ahorcado/blob/main/src/assets/Captura%20de%20pantalla%202024-09-12%20a%20las%2018.31.43.png)
+![alt text](https://github.com/KarmeleTellechea/ahorcado/blob/main/src/assets/Captura%20de%20pantalla%202024-09-12%20a%20las%2018.32.01.png)
+
 
 ## Project setup
 ```
