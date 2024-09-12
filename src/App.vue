@@ -105,10 +105,16 @@ export default {
 
       if (contador_aciertos.value === palabra.value.length) {
         win.value = true;
+        setTimeout(() => {
+      generarAleatorio();
+    }, 2000);
       }
 
       if (contador_errores.value >= 6) {
         lost.value = true;
+        setTimeout(() => {
+      generarAleatorio();
+    }, 2000);
       }
     }
 
