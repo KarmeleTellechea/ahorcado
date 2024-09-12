@@ -2,6 +2,7 @@
   <div id="app" class="container-fluid">
     <div v-if="win" class="text-center">
       <img src="@/assets/logo.png" />
+      
     </div>
     <div v-if="lost" class="text-center">
       <img src="@/assets/perdedor.jpeg" />
@@ -67,10 +68,15 @@ export default {
     const letras = ref("ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(''));
     const color_botones = ref([]);
     const palabra_escrita = ref([]);
-    const palabra = ref("manzana"); // Palabra inicial
+    const frutas = ["manzana", "platano", "cereza", "mango", "kiwi", "sandia", "pera"];
     const botones = ref([]);
+    const palabra = ref("");
 
     function generarAleatorio() {
+      // Seleccionar una palabra aleatoria de la lista de frutas
+      const randomIndex = Math.floor(Math.random() * frutas.length);
+      palabra.value = frutas[randomIndex];
+
       // Lógica para reiniciar el juego
       win.value = false;
       lost.value = false;
@@ -106,15 +112,15 @@ export default {
       if (contador_aciertos.value === palabra.value.length) {
         win.value = true;
         setTimeout(() => {
-      generarAleatorio();
-    }, 2000);
+          generarAleatorio();
+        }, 2000);
       }
 
       if (contador_errores.value >= 6) {
         lost.value = true;
         setTimeout(() => {
-      generarAleatorio();
-    }, 2000);
+          generarAleatorio();
+        }, 2000);
       }
     }
 
